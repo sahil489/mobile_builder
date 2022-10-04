@@ -89,6 +89,7 @@ export function ProductsCard() {
 }
 
 function randomTitle() {
+  console.log("ADJECTIVES.length", ADJECTIVES.length);
   const adjective = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)];
   const noun = NOUNS[Math.floor(Math.random() * NOUNS.length)];
 

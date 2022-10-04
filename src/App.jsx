@@ -13,8 +13,9 @@ import { Redirect } from "@shopify/app-bridge/actions";
 import { AppProvider as PolarisProvider } from "@shopify/polaris";
 import translations from "@shopify/polaris/locales/en.json";
 import "@shopify/polaris/build/esm/styles.css";
-
-import { HomePage } from "./components/HomePage";
+// import { HomePage } from "./components/HomePage";
+// import Navbar from "./components/navbar/Navbar";
+import Builder from "./components/builder/Builder";
 
 export default function App() {
   return (
@@ -27,7 +28,7 @@ export default function App() {
         }}
       >
         <MyProvider>
-          <HomePage />
+          <Builder />
         </MyProvider>
       </AppBridgeProvider>
     </PolarisProvider>

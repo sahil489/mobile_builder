@@ -116,6 +116,7 @@ export async function createServer(
    */
   let vite;
   if (!isProd) {
+    console.log("developementtt");
     vite = await import("vite").then(({ createServer }) =>
       createServer({
         root,
